@@ -19,15 +19,17 @@ function CreateNotes({ onAdd }) {
 
   };
   return (
-    <div>
-      <form>
+    <div className="form-container">
+      <form className="form-note">
         <input
           type="text"
           name="title"
           value={note.title}
           onChange={handleChange}
+          placeholder="Add New Note Title..."
         />
-        <textarea name="content" value={note.content} onChange={handleChange} />
+        <textarea name="content" value={note.content} onChange={handleChange} 
+          placeholder="Add New Note Content..."/>
         <button  onClick={handleSubmit}>
           add
         </button>
