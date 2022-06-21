@@ -1,11 +1,12 @@
 import React from "react";
+import { MdDelete } from "react-icons/md";
 function Notes ({title,content,onDelete,id}){
     console.log(title)
     return(
-        <div>
+        <div className="note-container">
             <h1>{title}</h1>
-            <h1>{content}</h1>
-            <button onClick={()=>onDelete(id)}>Delete</button>
+            <p>{content}</p>
+            <button onClick={()=>onDelete(id)}> <MdDelete size={25} /></button>
         </div>
     )
 }

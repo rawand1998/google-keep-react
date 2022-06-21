@@ -1,24 +1,17 @@
-.header-container{
-  display:flex;
+.header-container {
+  display: flex;
   justify-items: center;
-  box-shadow: 0  0 2px rgba(110, 110, 110);
-padding:10px 20px;
-margin:0 -10px;
+  box-shadow: 0 0 2px rgba(110, 110, 110);
+  padding: 10px 20px;
+  margin: 0 -10px;
 }
-.header-container h1{
+.header-container h1 {
   color: #5f6368;
   font-size: 1.5rem;
   font-weight: 600;
 }
-/* .form-container{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  justify-items: center;
-  background-color: #ff0;
-  width: 350px;
-} */
-.form-note{
+
+.form-note {
   position: relative;
   width: 600px;
   margin: 32px auto 50px auto;
@@ -27,7 +20,7 @@ margin:0 -10px;
   border-radius: 7px;
   box-shadow: 0 1px 7px rgb(128, 128, 128);
 }
-.form-note input{
+.form-note input {
   width: 100%;
   border: none;
   padding: 4px 10px;
@@ -44,19 +37,51 @@ form textarea {
   font-size: 1rem;
   resize: none;
 }
-form button{
-  position:absolute;
+form button {
+  position: absolute;
   right: 18px;
-  border:none;
-  border-radius:50%;
+  border: none;
+  border-radius: 50%;
   background: rgb(255, 200, 18);
- width: 36px;
- height: 36px;
- cursor: pointer;
- display: flex;
- justify-content:center;
- align-items: center;
- bottom: -10px;
- box-shadow:0 1px 3px rgb(165, 165, 165);
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: -10px;
+  box-shadow: 0 1px 3px rgb(165, 165, 165);
+}
 
+
+.note-container{
+  background: #ffffff;
+  width: 240px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+  padding: 10px;
+  margin: 16px;
+  float: left;
+  margin-right: 0;
+}
+.note-container button {
+  position: relative;
+  float: right;
+  color: #f88651;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+.note-container h1 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.note-container p {
+  font-size: 1rem;
+  color: #6f212b;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }

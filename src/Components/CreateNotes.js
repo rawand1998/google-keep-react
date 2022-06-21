@@ -14,7 +14,7 @@ function CreateNotes({ onAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     onAdd(note);
-    console.log("note",note)
+  setNote({ title:'',content:''})
   
 
   };
